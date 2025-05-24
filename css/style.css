@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root { /* 'root' permite criar variáveis com estilos definidos, para serem utilizadas dentro do arquivo .css - o que otimiza o processo de definição do estilo da página */
+    --background-color: #EEEEEE;
+    --main-color: #31363f;
+    --emphasis-color: #76abae;
+}
+
+* { /* remove alterações padrão dos navegadores para que a apresentação da página seja igual, independete do navegador */
+    margin: 0; /* retira todas as margens */
+    padding: 0; /* retira o espaçamento */
+    box-sizing: border-box; /* defini como tamanho padrão de borda o border-box */
+}
+
+body { /* define o estilo da tag body */
+    background-color: var(--background-color);
+    color: var(--main-color); /* cor do texto que está presente dentro da tag 'body' */
+    font-family: "Nunito Sans", sans-serif; /* define a fonte */
+}
+
+.container { /* defini o estilo da classe 'container' */
+    position: sticky; /* define que a posição será fixa */
+    top: 0; /* fixa no topo da tela */
+    z-index: 10; /* faz com que fique sempre na frente dos outros componentes ao rolar a tela */
+}
+
+header { /* define o estilo da tag 'header' */
+    background-color: var(--main-color); /* define a cor do fundo */
+    color: var(--background-color); /* define a cor do texto */
+    text-align: center; /* define que a posição do texto será no centro */
+    padding: 1.25rem; /* define o espaçamento */
+}
+
+nav { /* define o estilo da tag 'nav' */
+    margin-top: 0; /* retira a margem */
+    background-color: var(--emphasis-color); /* define a cor do fundo */
+    width: 100%; /* define a largura */
+    height: 2.5rem; /* define a altura */
+}
+
+nav ul { /* define o estilo da tag 'ul' que está dentro da tag 'nav' */
+    display: flex; /* define que os elemetos serão posicionados um ao lado do outro */
+    justify-content: center; /* define que os elementos serão posicionados no centro */
+    list-style: none; /* retira os marcadores/pontinhos padrão de lista */
+    padding: 0.65rem 0; /* define o espaçamento entre os itens da lista, primeiro superior e inferior, e depois aos lados */
+}
+
+nav ul li { /* define o estilo da tag 'li' que está dentro da tag 'ul' que está dentro da tag 'nav' */
+    margin: 0 1.5rem; /* define a margem entre os itens da lista, primeiro superior e inferior, e depois aos lados */
+}
+
+nav ul li a { /* define o estilo da tag âncora 'a' que está dentro da tag 'li' que está dentro da tag 'ul' que está dentro da tag 'nav' */
+    text-decoration: none; /* retira a decoração do texto */
+    color: var(--main-color); /* define a cor do texto */
+    font-weight: bold; /* define o peso da fonte */
+}
+
+nav ul li a:hover { /* define o estilo da bub-classe hover (quando o mouse passa por cima do elemento), na tag âncora 'a' que está dentro da tag 'li' que está dentro da tag 'ul' que está dentro da tag 'nav' */
+    color: var(--background-color); /* define a cor do texto */
+    font-weight: bold; /* define o peso da fonte */
+    transition: all 0.3s ease; /* define a transição para todos os elementos, depois a duração */
+}
+
+.products { /* define o estilo da classe products */
+    display: flex; /* define que os elemetos serão posicionados um ao lado do outro */
+    justify-content: center; /* define que os elementos serão posicionados no centro */
+    gap: 2rem; /* define a distância entre as propriedades */
+    padding: 5rem; /* define o espaçamento entre os componentes */
+    flex-wrap: wrap; /* garante que, quando a quantidade de componentes atingir o limite horizontal, que sejam quebrados em mais linhas para caberem em tela */
+}
+
+.card { /* define o estilo da classe card */
+    background-color: var(--background-color); /* define a cor do fundo */
+    border: 1px solid #ccc; /* define a borda do componente, e sua cor (borda) */
+    padding: .1rem; /* define o espaçamento entre os componentes */
+    border-radius: .5rem; /* arredonda a borda do componente */
+    text-align: center; /* alinha o texto no centro */
+    display: flex; /* define que os elemetos serão posicionados um ao lado do outro */
+    flex-direction: column; /* define que os elementes serão posicionados em coluna, um embaixo do outro */
+    justify-content: space-between; /* define um espaçamento entre os elementos */
+    width: calc(22%); /* define a largura */
+}
+
+.card p { /* define o estilo da propriedade 'p' que está dentro da classe card */
+    margin-top: 0.5rem; /* define a margem superior */
+    font-size: 1.2rem; /* define o tamanho da fonte */
+}
+
+.card img { /* define o estilo da propriedade 'img' que está dentro da classe card */
+    width: 100%; /* define a largura */
+    margin-bottom: .5rem; /* define a margem superior */
+    border-radius: .3rem; /* arredonda a borda do componente */
+}
+
+.card button { /* define o estilo da propriedade 'button' que está dentro da classe card */
+    background-color: var(--emphasis-color); /* define a cor de fundo */
+    color: var(--background-color); /* define a cor do texto */
+    border: none; /* retira a borda */
+    margin-top: 1rem; /* define a margem superior */
+    padding: .65rem; /* define o espaçamento entre os componentes */
+    font-weight: bold; /* define o peso da fonte */
+}
+
+.card button:hover { /* define o estilo da bub-classe hover (quando o mouse passa por cima do elemento), na classe 'card' */
+    background-color: var(--main-color) /* define a cor do fundo */
+}
+
+footer {
+    background-color: var(--main-color); /* define a cor do fundo */
+    color: var(--background-color); /* define a cor do texto */
+    text-align: center; /* alinha o texto no centro */
+    padding: 1rem; /* define o espaçamento entre os componentes */
+    width: 100%; /* define a largura */
+    bottom: 0; /* define que ficará ao final da página */
+    position: absolute; /* define que a posição será absoluta */
+}
+
+@media (max-width: 1024px) { /* propriedade 'media' trata responsividade da página, quando a página possuir 1024px de tamanho */
+    .card { /* aplica responsividade na classe 'card' */
+        width: calc(33.33%); /* define a largura */
+    }
+}
+
+@media (max-width: 758px) { /* propriedade 'media' trata responsividade da página, quando a página possuir 758px de tamanho */
+    .card { /* aplica responsividade na classe 'card' */
+        width: calc(50%); /* define a largura */
+    }
+
+    .card h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) { /* propriedade 'media' trata responsividade da página, quando a página possuir 480px de tamanho */
+    .card { /* aplica responsividade na classe 'card' */
+        width: calc(100%); /* define a largura */
+    }
+}
