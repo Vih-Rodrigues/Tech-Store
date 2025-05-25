@@ -1,7 +1,9 @@
 # Tech Store
 
 A simple virtual store project built with HTML, CSS, JavaScript, and JSON data.  
-This project was developed during the introductory module of the postgraduate course in Software Engineering at USP/ESALQ.
+This version was developed as part of the introductory module of the postgraduate course in Software Engineering at USP/ESALQ.
+
+It is a basic, class-oriented implementation designed for learning purposes and can be expanded or improved in future iterations.
 
 ## Structure
 
