@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Basic T-Shirt",
+    "price": 67.25,
+    "image": "../images/clothing.jpeg",
+    "category": "Clothing"
+  },
+  {
+    "name": "Modern JavaScript Book",
+    "price": 145.50,
+    "image": "../images/books.jpeg",
+    "category": "Books"
+  },
+  {
+    "name": "RTX 3060 Graphics Card",
+    "price": 2399.99,
+    "image": "../images/electronics.jpeg",
+    "category": "Electronics"
+  },
+  {
+    "name": "RGB Mechanical Keyboard",
+    "price": 349.00,
+    "image": "../images/electronics.jpeg",
+    "category": "Electronics"
+  },
+  {
+    "name": "Jeans Pants",
+    "price": 149.90,
+    "image": "../images/clothing.jpeg",
+    "category": "Clothing"
+  },
+  {
+    "name": "Clean Code Book",
+    "price": 119.90,
+    "image": "../images/books.jpeg",
+    "category": "Books"
+  },
+  {
+    "name": "Logitech G29 Steering Wheel",
+    "price": 1899.00,
+    "image": "../images/electronics.jpeg",
+    "category": "Electronics"
+  },
+  {
+    "name": "Nike Sports Sneakers",
+    "price": 299.90,
+    "image": "../images/clothing.jpeg",
+    "category": "Clothing"
+  },
+  {
+    "name": "Python for Beginners Book",
+    "price": 84.00,
+    "image": "../images/books.jpeg",
+    "category": "Books"
+  },
+  {
+    "name": "24\" Full HD Monitor",
+    "price": 799.00,
+    "image": "../images/electronics.jpeg",
+    "category": "Electronics"
+  },
+  {
+    "name": "Windbreaker Jacket",
+    "price": 199.00,
+    "image": "../images/clothing.jpeg",
+    "category": "Clothing"
+  },
+  {
+    "name": "Data Structures Book",
+    "price": 92.75,
+    "image": "../images/books.jpeg",
+    "category": "Books"
+  },
+  {
+    "name": "Gaming Mouse with RGB",
+    "price": 149.90,
+    "image": "../images/electronics.jpeg",
+    "category": "Electronics"
+  },
+  {
+    "name": "Blue Polo Shirt",
+    "price": 69.90,
+    "image": "../images/clothing.jpeg",
+    "category": "Clothing"
+  },
+  {
+    "name": "Ryzen 5 5600X Processor",
+    "price": 1349.00,
+    "image": "../images/electronics.jpeg",
+    "category": "Electronics"
+  },
+  {
+    "name": "Men's Sports Shorts",
+    "price": 89.90,
+    "image": "../images/clothing.jpeg",
+    "category": "Clothing"
+  },
+  {
+    "name": "Design Patterns Book",
+    "price": 99.00,
+    "image": "../images/books.jpeg",
+    "category": "Books"
+  },
+  {
+    "name": "Gaming Case with LED",
+    "price": 419.90,
+    "image": "../images/electronics.jpeg",
+    "category": "Electronics"
+  },
+  {
+    "name": "Women's Casual Dress",
+    "price": 129.90,
+    "image": "../images/clothing.jpeg",
+    "category": "Clothing"
+  },
+  {
+    "name": "Bluetooth Headphones",
+    "price": 229.00,
+    "image": "../images/electronics.jpeg",
+    "category": "Electronics"
+  },
+  {
+    "name": "HTML and CSS Book",
+    "price": 64.00,
+    "image": "../images/books.jpeg",
+    "category": "Books"
+  },
+  {
+    "name": "Hooded Sweatshirt",
+    "price": 139.90,
+    "image": "../images/clothing.jpeg",
+    "category": "Clothing"
+  },
+  {
+    "name": "1TB SSD Drive",
+    "price": 389.90,
+    "image": "../images/electronics.jpeg",
+    "category": "Electronics"
+  },
+  {
+    "name": "Refactoring Book",
+    "price": 110.00,
+    "image": "../images/books.jpeg",
+    "category": "Books"
+  },
+  {
+    "name": "Women's Denim Skirt",
+    "price": 89.90,
+    "image": "../images/clothing.jpeg",
+    "category": "Clothing"
+  },
+  {
+    "name": "You Don't Know JS",
+    "price": 98.50,
+    "image": "../images/books.jpeg",
+    "category": "Books"
+  },
+  {
+    "name": "Laptop i7 16GB RAM",
+    "price": 4299.00,
+    "image": "../images/electronics.jpeg",
+    "category": "Electronics"
+  },
+  {
+    "name": "Algorithms: Theory and Practice",
+    "price": 119.00,
+    "image": "../images/books.jpeg",
+    "category": "Books"
+  },
+  {
+    "name": "Unisex Hoodie",
+    "price": 149.90,
+    "image": "../images/clothing.jpeg",
+    "category": "Clothing"
+  },
+  {
+    "name": "Functional Programming Languages",
+    "price": 89.00,
+    "image": "../images/books.jpeg",
+    "category": "Books"
+  }
+]

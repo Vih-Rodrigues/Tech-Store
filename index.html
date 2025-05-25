@@ -1,82 +1,52 @@
-<!DOCTYPE html> <!-- informa ao navegador que deve ser utilizado o HTML mais atualizado para decifrar a página (neste momento o HTML 5) -->
-<html lang="en"> <!-- tag 'html' com seu atributo 'lang' informa o idioma da página -->
-<head> <!-- tag 'head' contém as informações da página que não são visíveis, metadados que o navegador precisará utilizar -->
-    <meta charset="UTF-8"> <!-- tag 'meta' com seu atributo 'charset' informa o padrão de caracteres que será utilizado -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- torna a página mais responsiva, com essa tag o navegador consegue dimensionar e exibir a página do melhor jeito -->
-    <link rel="stylesheet" href="./css/style.css"> <!-- faz o link com o arquivo .css -->
-    <title>E-commerce</title> <!-- título da guia da página no navegador -->
+<!DOCTYPE html> <!-- Informs the browser to use the latest HTML version (HTML5) -->
+<html lang="en"> <!-- The 'lang' attribute sets the language of the document -->
+<head> <!-- Contains metadata and resources for the page (not visible content) -->
+    <meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive on all devices -->
+    <link rel="stylesheet" href="./css/style.css"> <!-- Links the external CSS stylesheet -->
+    <title>E-commerce</title> <!-- Sets the page title (displayed on browser tab) -->
 </head>
-<body> <!-- é dentro da tag 'body' que ficam os conteúdos visíveis da página -->
-    <section class="container"> <!-- tag 'section' abre uma sessão na pagina, e 'class' dá nome para essa sessão -->
-        <header> <!-- parte superior da página -->
-            <h1>Tech Store</h1> <!-- tag 'h1' contém o título principal da página -->
+<body> <!-- The visible content of the page goes inside the 'body' tag -->
+    <section class="container"> <!-- Main section wrapper with class 'container' -->
+        <header> <!-- Top section of the page -->
+            <h1>Tech Store</h1> <!-- Main heading of the page -->
         </header>
     
-        <nav> <!-- menu de navegação -->
-            <ul> <!-- tag 'ul' é utilizada para criação de lista -->
-                <li> <!-- item da lista -->
-                    <a href="#">Home</a> <!-- tag ancora, serve para navigar entre as tags -->
+        <nav> <!-- Navigation menu -->
+            <ul> <!-- Unordered list -->
+                <li> <!-- List item -->
+                    <a href="#">Home</a> <!-- Anchor tag used for navigation -->
                 </li>
-                <li> <!-- item da lista -->
-                    <a href="#">Products</a> <!-- tag ancora, serve para navigar entre as tags -->
+                <li>
+                    <a href="#">Products</a>
                 </li>
-                <li> <!-- item da lista -->
-                    <a href="#">About</a> <!-- tag ancora, serve para navigar entre as tags -->
+                <li>
+                    <a href="#">About</a>
                 </li>
-                <li> <!-- item da lista -->
-                    <a href="#">Contacts</a> <!-- tag ancora, serve para navigar entre as tags -->
+                <li>
+                    <a href="#">Contacts</a>
                 </li>
             </ul>
         </nav>
     </section>
 
-    <main> <!-- é dentro da tag 'main' que ficam os conteúdos principais da página -->
-        <section class="products"> <!-- tag 'section' abre uma sessão na pagina, e 'class' dá nome para essa sessão -->
-            <div class="card"> <!-- div é uma tag genérica para agrupar conteúdos da página -->
-                <img src="./data/img.jpeg" alt="Product image"> <!-- tag para incluir imagem -->
-                <h2> <!-- título tamanho 2 (menor que h1) -->
-                    Product 1
-                </h2>
-                <p> <!-- parágrafo -->
-                    R$ 9,99
-                </p>
-                <button>
-                    Buy
-                </button>
-            </div>
+    <section class="search-bar"> <!-- Section for the search bar -->
+        <div class="search-container"> <!-- Container for the search input and icon -->
+            <input type="text" id="searchInput" placeholder="Search products..." /> <!-- Text input for searching products -->
+            <span class="search-icon">🔍</span> <!-- Icon displayed next to the search input -->
+        </div>
+    </section>
 
-            <div class="card"> <!-- div é uma tag genérica para agrupar conteúdos da página -->
-                <img src="./data/img.jpeg" alt="Product image"> <!-- tag para incluir imagem -->
-                <h2> <!-- título tamanho 2 (menor que h1) -->
-                    Product 2
-                </h2>
-                <p> <!-- parágrafo -->
-                    R$ 9,99
-                </p>
-                <button>
-                    Buy
-                </button>
-            </div>
+    <section class="products"> <!-- Section where products will be dynamically loaded -->
+        <!-- Products loaded using JavaScript and JSON -->
+    </section>
 
-            <div class="card"> <!-- div é uma tag genérica para agrupar conteúdos da página -->
-                <img src="./data/img.jpeg" alt="Product image"> <!-- tag para incluir imagem -->
-                <h2> <!-- título tamanho 2 (menor que h1) -->
-                    Product 3
-                </h2>
-                <p> <!-- parágrafo -->
-                    R$ 9,99
-                </p>
-                <button>
-                    Buy
-                </button>
-            </div>
-        </section>
-    </main>
-
-    <footer> <!-- é dentro da tag footer que ficam os elementos colocados no final da página -->
+    <footer> <!-- Footer section at the bottom of the page -->
         <p>
-            &copy; 2025 Tech Store. Todos os direitos reservados.
+            &copy; 2025 Tech Store. All rights reserved.
         </p>
     </footer>
+
+    <script src="./js/main.js" type="module"></script> <!-- Loads the JavaScript module for interactivity -->
 </body>
 </html>
